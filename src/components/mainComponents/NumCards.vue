@@ -17,6 +17,8 @@ import {store} from '../../store.js';
 
 <style lang="scss" scoped>
     h4{
-        background-color: darkgray;
+        background-color: rgb(36, 36, 36);
+        color: white;
+        padding: 10px;
     }
 </style>

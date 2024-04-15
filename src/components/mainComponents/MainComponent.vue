@@ -1,5 +1,5 @@
 <template>
-    <main class="container">
+    <main class="container p-4 ">
         <CardsList />
     </main >
 </template>
@@ -15,7 +15,5 @@ import CardsList from './CardsList.vue'
 </script>
 
 <style lang="scss" scoped>
-    main{
-        background-color: white;
-    }
+    
 </style>

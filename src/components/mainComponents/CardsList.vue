@@ -1,31 +1,34 @@
 <template>
+    <div class="container">
         <NumCards />
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-2" v-for="(card ,index) in store.cards">
-                <CardComponent :id="card.id" :title="card.name" :image="card[index].card_images.image_url" />
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+            <div class="col" v-for="card in store.cards">
+                <CardComponent :image="card.card_images[0].image_url" :id="card.id" :title="card.name"
+                    :archetype="card.archetype" />
             </div>
         </div>
+    </div>
 </template>
 
 <script>
-import {store} from '../../store.js';
+import { store } from '../../store.js';
 import NumCards from './NumCards.vue';
 import CardComponent from './CardComponent.vue';
 
-    export default {
-        name: 'CardsList',
-        components:{
-            NumCards,
-            CardComponent
-        },
-        data(){
-            return{
-                store
-            }
+export default {
+    name: 'CardsList',
+    components: {
+        NumCards,
+        CardComponent
+    },
+    data() {
+        return {
+            store
         }
     }
+}
 </script>
-
-<style lang="scss" scoped>
-
-</style>
+*{
+    background-color: white;
+}
+<style lang="scss" scoped></style>
