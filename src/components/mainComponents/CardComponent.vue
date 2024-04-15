@@ -1,16 +1,12 @@
 <template>
    <div class="card">
-        <img :src="image" class="card-img-top" :alt="title" ref="image">
+        <img :src="image" class="card-img-top" :alt="title">
         <div class="card-body">
             <h5 class="card-title">{{title}}</h5>
             <p class="card-text">
-                <span>{{ status }}</span> 
-                <br>
-                <span>{{ text }}</span>
-                <br>
-                <span>{{ subtext }}</span>
+                questo è p
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
     </div>
 </template>
@@ -18,6 +14,11 @@
 <script>
     export default {
         name: 'CardComponent',
+        props:[
+            'id',
+            'image',
+            'title'
+        ]
     }
 </script>
 

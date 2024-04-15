@@ -25,7 +25,9 @@ import MainComponent from './components/mainComponents/MainComponent.vue'
         axios.get(this.store.apiUrl).then((res)=>{
           this.store.cards = res.data.data;
           this.store.numCards = res.data.meta.current_rows;
-          console.log(res.data);
+          console.log(res.data.data);
+          console.log(this.store.cards);
+
         });
       }
     },
