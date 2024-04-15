@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="p-4">
         <NumCards />
         <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
             <div class="col" v-for="card in store.cards">
@@ -28,7 +28,9 @@ export default {
     }
 }
 </script>
+
+<style lang="scss" scoped>
 *{
     background-color: white;
 }
-<style lang="scss" scoped></style>
+</style>

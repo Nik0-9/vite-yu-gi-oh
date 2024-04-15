@@ -1,5 +1,5 @@
 <template>
-    <main class="container p-4 ">
+    <main class="container">
         <CardsList />
     </main >
 </template>
