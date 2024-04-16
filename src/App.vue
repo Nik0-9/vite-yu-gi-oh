@@ -41,7 +41,6 @@ export default {
         this.store.cards = res.data.data;
         this.store.numCardsPage = res.data.meta.current_rows;
         this.store.totNumCards = res.data.meta.total_rows;
-
         // console.log(res.data.data);
         // console.log(this.store.cards);
       })

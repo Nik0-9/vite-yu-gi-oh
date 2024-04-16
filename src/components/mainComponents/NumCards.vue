@@ -1,5 +1,5 @@
 <template>
-        <h4>Found {{ store.numCards }} cards</h4>
+        <h4>Found {{ store.numCardsPage }} cards of {{ store.totNumCards }}</h4>
 </template>
 
 <script>
@@ -9,7 +9,6 @@ import {store} from '../../store.js';
         data(){
             return{
                 store
-
             }
         }
     }
